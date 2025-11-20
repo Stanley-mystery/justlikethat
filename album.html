@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>JUSTLIKETHAT</title>
+    <meta
+      name="description"
+      content="Hallelujah! My Joy has come from the Inexhaustible God, who in His uncommon mercy makes room for me and fills my mouth with praise everywhere."
+    />
+
+    <meta
+      name="keywords"
+      content="Hallelujah! My Joy has come from the Inexhaustible God, who in His uncommon mercy makes room for me and fills my mouth with praise everywhere."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicons -->
+    <link href="assets/images/favicon.ico" rel="icon" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- glassbox  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+
+    <!-- swiper CDN  -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap Icons CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <main class="main">
+      <!-- ================= SPOTIFY-LIKE SONG LIST (Compact Rows) ================= -->
+      <section id="album-songs" class="section py-5">
+        <div class="container">
+          <h2 class="text-center text-white mb-4 display-6 fw-bold">
+            Album — Mini Player
+          </h2>
+
+          <ul class="list-group playlist">
+            <!-- TRACK TEMPLATE START -->
+            <!-- 1 LO'I COME -->
+            <li class="list-group-item track" data-index="0">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title">LO'I COME</strong>
+                  <div class="track-desc">
+                    What is written concerning you is good — health, joy,
+                    fulfilment, peace, lifting, and divine help.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <!-- Hidden audio element -->
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/lo-i-come.mp3"
+              ></audio>
+            </li>
+
+            <!-- 2 Iremitide -->
+            <li class="list-group-item track" data-index="1">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title">IREMITIDE</strong>
+                  <div class="track-desc">
+                    “Iremitide” is a prophetic testimony and a reminder that
+                    joy, laughter, and divine turnaround are your reality as you
+                    listen.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/Iremitide.mp3"
+              ></audio>
+            </li>
+
+            <!-- 3 INEXHAUSTIBLE GOD -->
+            <li class="list-group-item track" data-index="2">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title">INEXHAUSTIBLE GOD</strong>
+                  <div class="track-desc">
+                    This song speaks of the God without end — the One who can
+                    never be exhausted or used up.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/inexhaustable-God.mp3"
+              ></audio>
+            </li>
+
+            <!-- 4 FAYEGBAMI -->
+            <li class="list-group-item track" data-index="3">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title">FAYEGBAMI</strong>
+                  <div class="track-desc">
+                    God is making room for me — clearing paths, opening doors,
+                    and positioning me to glorify Him.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/fayegbami.mp3"
+              ></audio>
+            </li>
+
+            <!-- 5 ANU TO YATO -->
+            <li class="list-group-item track" data-index="4">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title"
+                    >ANU TO YATO — MERCY NOT COMMON</strong
+                  >
+                  <div class="track-desc">
+                    This is the kind of mercy that distinguished David — a mercy
+                    that goes beyond sins and weaknesses.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/anu-to-yato.mp3"
+              ></audio>
+            </li>
+
+            <!-- 6 HALLELUYAH -->
+            <li class="list-group-item track" data-index="5">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title">HALLELUYAH</strong>
+                  <div class="track-desc">
+                    The song of the saints and the anthem of victory — the
+                    mighty chorus!
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/halleluyah.mp3"
+              ></audio>
+            </li>
+
+            <!-- 7 JUST LIKE THAT -->
+            <li class="list-group-item track" data-index="6">
+              <div class="track-left">
+                <button class="track-play btn btn-ghost" aria-label="Play">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+
+                <div class="track-meta">
+                  <strong class="track-title"
+                    >JUST LIKE THAT — JESUS CAME THROUGH FOR ME</strong
+                  >
+                  <div class="track-desc">
+                    Suddenly the miraculous happened — God showed up right when
+                    hope seemed lost.
+                  </div>
+                </div>
+              </div>
+
+              <div class="track-center">
+                <div class="time current">0:00</div>
+                <input
+                  class="track-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  value="0"
+                />
+                <div class="time total">0:00</div>
+              </div>
+
+              <div class="track-right">
+                <div class="volume-wrap">
+                  <i class="bi bi-volume-up-fill ms-2"></i>
+                  <input
+                    class="track-volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                  />
+                </div>
+
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <audio
+                class="track-audio"
+                preload="metadata"
+                src="assets/audio/just-like-that.mp3"
+              ></audio>
+            </li>
+            <!-- TRACK TEMPLATE END -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= STYLES (paste into your stylesheet or <style>) ================= -->
+      <style>
+        /* Album Songs Section */
+        #album-songs {
+          position: relative;
+          background: url("assets/img/hero-album-cover.jpeg") center/cover
+            no-repeat;
+          overflow: hidden;
+        }
+        #album-songs::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.67);
+          backdrop-filter: blur(20px);
+          z-index: 0;
+        }
+
+        #album-songs .container {
+          position: relative;
+          z-index: 1;
+          max-width: 1200px;
+        }
+
+        /* Section Title */
+        #album-songs h2 {
+          color: #fff;
+          font-weight: 700;
+          margin-bottom: 2rem;
+          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        /* Playlist */
+        .playlist {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+
+        .playlist .track {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 0.75rem;
+          background: rgba(255, 255, 255, 0.05);
+          transition: all 0.3s ease;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          flex-wrap: wrap;
+        }
+
+        .playlist .track:hover {
+          background: rgba(255, 255, 255, 0.15);
+          transform: translateY(-2px);
+        }
+
+        /* Track Left */
+        .track-left {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          flex: 1 1 250px;
+        }
+
+        .track-play {
+          background: #ff4a90;
+          color: #fff;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.2s ease;
+          flex-shrink: 0;
+        }
+
+        .track-play:hover {
+          transform: scale(1.1);
+        }
+
+        .track-meta {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .track-title {
+          color: #fff;
+          font-weight: 600;
+          font-size: 1rem;
+          margin-bottom: 0.25rem;
+        }
+
+        .track-desc {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 0.875rem;
+          line-height: 1.3;
+          max-width: 300px;
+        }
+
+        /* Track Center */
+        .track-center {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          flex: 1 1 200px;
+          margin: 0.5rem 0;
+        }
+
+        .track-center .time {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 0.75rem;
+          min-width: 35px;
+          text-align: center;
+        }
+
+        .track-seek {
+          flex: 1;
+          -webkit-appearance: none;
+          background: rgba(255, 255, 255, 0.2);
+          height: 4px;
+          border-radius: 2px;
+          outline: none;
+          transition: background 0.3s;
+        }
+
+        .track-seek::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #ff4a90;
+          cursor: pointer;
+        }
+
+        .track-seek::-moz-range-thumb {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #ff4a90;
+          cursor: pointer;
+        }
+
+        /* Track Right */
+        .track-right {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          flex: 1 1 150px;
+          justify-content: flex-end;
+        }
+
+        .volume-wrap {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .volume-wrap i {
+          color: #ff4a90;
+          font-size: 1.2rem;
+        }
+
+        .track-volume {
+          width: 80px;
+          -webkit-appearance: none;
+          background: rgba(255, 255, 255, 0.2);
+          height: 4px;
+          border-radius: 2px;
+        }
+
+        .track-volume::-webkit-slider-thumb {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #fff;
+        }
+
+        .eq-bars {
+          display: flex;
+          align-items: flex-end;
+          gap: 2px;
+          height: 20px;
+        }
+
+        .eq-bars span {
+          display: block;
+          width: 3px;
+          height: 4px;
+          background: #ff4a90;
+          animation: eq 1s infinite;
+        }
+
+        .eq-bars span:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .eq-bars span:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+
+        @keyframes eq {
+          0%,
+          100% {
+            height: 4px;
+          }
+          50% {
+            height: 15px;
+          }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+          .track-left {
+            flex: 1 1 100%;
+          }
+          .track-center {
+            flex: 1 1 100%;
+          }
+          .track-right {
+            flex: 1 1 100%;
+            justify-content: flex-start;
+            margin-top: 0.5rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #album-songs h2 {
+            font-size: 1.5rem;
+          }
+
+          .track-title {
+            font-size: 0.95rem;
+          }
+
+          .track-desc {
+            font-size: 0.8rem;
+            max-width: 100%;
+          }
+
+          .track-center .time {
+            font-size: 0.7rem;
+            min-width: 30px;
+          }
+
+          .track-volume {
+            width: 60px;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .track-left {
+            gap: 0.5rem;
+          }
+
+          .track-play {
+            width: 40px;
+            height: 40px;
+          }
+
+          .track-center {
+            gap: 0.3rem;
+          }
+
+          .track-right {
+            gap: 0.5rem;
+          }
+
+          .eq-bars {
+            height: 15px;
+          }
+        }
+      </style>
+
+      <!-- ================= SCRIPT (paste just before closing </body>) ================= -->
+      <script>
+        (function () {
+          const tracks = Array.from(document.querySelectorAll(".track"));
+
+          // Helper format time
+          function formatTime(sec) {
+            if (isNaN(sec) || !isFinite(sec)) return "0:00";
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60)
+              .toString()
+              .padStart(2, "0");
+            return `${m}:${s}`;
+          }
+
+          // Pause all except optional keep index
+          function pauseAll(exceptIndex) {
+            tracks.forEach((t, i) => {
+              const audio = t.querySelector(".track-audio");
+              const playBtn = t.querySelector(".track-play i");
+              const eq = t.querySelector(".eq-bars");
+              if (i !== exceptIndex) {
+                if (!audio.paused) audio.pause();
+                playBtn.className = "bi bi-play-fill";
+                eq.classList.remove("playing");
+              }
+            });
+          }
+
+          tracks.forEach((track, idx) => {
+            const audio = track.querySelector(".track-audio");
+            const playBtn = track.querySelector(".track-play");
+            const playIcon = playBtn.querySelector("i");
+            const seek = track.querySelector(".track-seek");
+            const curTimeEl = track.querySelector(".time.current");
+            const totTimeEl = track.querySelector(".time.total");
+            const vol = track.querySelector(".track-volume");
+            const eq = track.querySelector(".eq-bars");
+
+            // When metadata loads, set total time & seek max
+            audio.addEventListener("loadedmetadata", () => {
+              seek.max = audio.duration;
+              totTimeEl.textContent = formatTime(audio.duration);
+            });
+
+            // Update time while playing
+            audio.addEventListener("timeupdate", () => {
+              seek.value = audio.currentTime;
+              curTimeEl.textContent = formatTime(audio.currentTime);
+            });
+
+            // Seek input
+            seek.addEventListener("input", () => {
+              audio.currentTime = seek.value;
+            });
+
+            // Volume
+            vol.addEventListener("input", () => {
+              audio.volume = vol.value;
+            });
+
+            // Play button toggles
+            playBtn.addEventListener("click", () => {
+              if (audio.paused) {
+                pauseAll(idx); // pause others
+                audio.play().catch(() => {
+                  /* autoplay blocked — user will click to enable */
+                });
+                playIcon.className = "bi bi-pause-fill";
+                eq.classList.add("playing");
+              } else {
+                audio.pause();
+                playIcon.className = "bi bi-play-fill";
+                eq.classList.remove("playing");
+              }
+            });
+
+            // When audio ends
+            audio.addEventListener("ended", () => {
+              playIcon.className = "bi bi-play-fill";
+              eq.classList.remove("playing");
+              // auto-advance: play next track if present
+              const next = tracks[idx + 1];
+              if (next) {
+                const nextAudio = next.querySelector(".track-audio");
+                const nextBtn = next.querySelector(".track-play");
+                pauseAll();
+                nextAudio.currentTime = 0;
+                nextAudio.play().catch(() => {});
+                next.querySelector(".track-play i").className =
+                  "bi bi-pause-fill";
+                next.querySelector(".eq-bars").classList.add("playing");
+              }
+            });
+
+            // If user clicks anywhere on track row (not on inputs), toggle play/pause
+            track.addEventListener("click", (e) => {
+              const target = e.target;
+              if (
+                target.matches("input") ||
+                target.closest(".track-right") ||
+                target.closest(".btn-ghost")
+              )
+                return;
+              // toggle
+              if (audio.paused) {
+                playBtn.click();
+              } else {
+                playBtn.click();
+              }
+            });
+
+            // Initialize volume default
+            audio.volume = parseFloat(vol.value || 1);
+          });
+
+          // Accessibility: keyboard support for play buttons
+          document.addEventListener("keydown", (e) => {
+            if (e.key === " " || e.key === "k") {
+              // space or k toggles focused track play if a play button is focused
+              const active = document.activeElement;
+              if (
+                active &&
+                active.classList &&
+                active.classList.contains("track-play")
+              ) {
+                e.preventDefault();
+                active.click();
+              }
+            }
+          });
+        })();
+      </script>
+    </main>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+
+    <!-- glassbox  -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- purecounter  -->
+    <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"9511981dfd56dbfb","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.6.2","token":"68c5ca450bae485a842ff76066d69420"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
