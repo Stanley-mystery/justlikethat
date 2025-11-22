@@ -500,8 +500,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: white;
+  border-color: white;
 }
 
 .footer h4 {
@@ -6220,12 +6220,12 @@ section,
 
 .social-links .social-icon {
   font-size: 30px;
-  color: var(--accent-color);
+  color: white;
   transition: 0.3s;
 }
 
 .social-links .social-icon:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color:white;
   transform: scale(1.1);
 }
 
